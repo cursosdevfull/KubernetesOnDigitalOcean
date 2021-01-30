@@ -73,6 +73,17 @@ Hay que hacerlo desde el panel de DO
 
 ---
 
-### Cursos Pro
+### Cursos Dev (cursos pro)
 
-[Cursos Dev](https://cursos-dev.com)
+- Angular
+- NodeJS
+- Docker
+- Kubernetes
+- Microservicios
+- Arquitectura Hexagonal
+- Javascript
+- Typescript
+- Despliegues continuos a AWS usando Azure Devops
+- Despliegues a AWS, Google y Azure
+
+[Cursos Dev clic aquí](https://cursos-dev.com)
