@@ -48,6 +48,8 @@ doctl kubernetes cluster kubeconfig save k8s-testing
 
 ```
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+mv ./kubectl /usr/local/bin/kubectl
 ```
 
 ### Ejecución de yaml de K8S
@@ -66,3 +68,9 @@ doctl kubernetes cluster delete k8s-testing
 ### Eliminación de balanceador
 
 Hay que hacerlo desde el panel de DO
+
+---
+
+### Cursos Pro
+
+[Cursos Dev](https://cursos-dev.com)
