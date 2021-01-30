@@ -9,6 +9,8 @@ mv /app/doctl /usr/local/bin
 
 ### Autenticación con DO
 
+- Generar y obtener un token desde el panel de DO (menú de la izquierda, opción API)
+
 ```
 doctl auth init
 ```
