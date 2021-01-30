@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testk8s-deploy
+  labels:
+    app: testk8s-app
+    test: test
+  annotations:
+    fluxcd.io/tag.example-app: semver:~1.0
+    fluxcd.io/automated: "true"
+spec:
+  selector:
+    matchLabels:
+      app: testk8s-app
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: testk8s-app
+    spec:
+      containers:
+        - name: testk8s-app
+          image: sergiohidalgocaceres/k8s-nodejs:1.0.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5500
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "50m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"

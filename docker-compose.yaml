@@ -1,0 +1,11 @@
+version: "3.4"
+services:
+  nodejs:
+    container_name: nodejs
+    image: sergiohidalgocaceres/k8s-nodejs:1.0.0
+    build:
+      context: ./nodejs
+    volumes:
+      - ./nodejs/src/:/work/src/
+    ports:
+      - 5002:5500
