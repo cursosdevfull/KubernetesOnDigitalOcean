@@ -84,6 +84,6 @@ Hay que hacerlo desde el panel de DO
 - Javascript
 - Typescript
 - Despliegues continuos a AWS usando Azure Devops
-- Despliegues a AWS, Google y Azure
+- Despliegues a AWS, Google Cloud y Azure
 
 [Cursos Dev clic aquí](https://cursos-dev.com)
